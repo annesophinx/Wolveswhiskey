@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/themes/light.css" />
+    <link rel="stylesheet" href="styles.css">
+    <title> Wolves Whiskey</title>
+  </head>
+  <body>
+    <!--Navbar with logo and hamburger menu-->
+    <nav id="navbar">
+      <img class="imgtest" src="images/logo.png" alt="Logo image">
+    </nav>
+    <div id="menu">
+      <!--Animation with the hamburger and cross icons-->
+      <div id="menu-bar" onclick="menuOnClick()">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+      </div>
+      <!--menu list-->
+      <nav class="nav" id="nav">
+        <ul>
+          <li>
+            <a href="#navbar">Products</a>
+          </li>
+          <li>
+            <a href="#specialprojects">Special projects</a>
+          </li>
+          <li>
+            <a href="#ourstory">Our story</a>
+          </li>
+          <li>
+            <a href="#location">Location</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="menu-bg" id="menu-bg"></div>
+    <!--Products page-->
+    <section class="section1">
+      <img class="lettering" src="images/Wolves.png" alt=" Wolves lettering">
+      <h1>Whiskey</h1>
+      <section id="spring">
+        <div class="float-area">
+          <img class="floating-img" src="images/Spring.png" alt=" Spring Bottle">
+        </div>
+        <div class="text">
+          <h2>
+            <span id="orangetext" class="txt-rotate" data-period="2000" data-rotate='[ "Spring Run", "Spring Run", "Spring Run", "Spring Run", "Spring Run" ]'></span>
+          </h2>
+          <p class="spring">Spring Run is a variation of Wolves signature blend, consisting of whiskey distilled from Stout craft beer, aged in French Oak for 10 years, whiskey distilled from Pilsner beer, aged in New American Oak for 6 years, a Rye selected for its back palate spice, and a single malt American whiskey distilled from two-row malted barley and aged in used French Oak for 10 years. <br>
+            <br>
+            <span class="orangetext">Nose:</span> Honeysuckle, citrus, hops, black cherry, warm vanilla. <br>
+            <br>
+            <span class="orangetext">Tasting Notes:</span> Tangerine, dark chocolate, hops, oak, citrus, nutmeg. <br>
+            <br>
+            <span class="orangetext">Finish:</span> Long and warm on the front pallet, rising space on the finish.
+          </p>
+          <br>
+          <br>
+          <button class="order-button">Order now</button>
+          <br>
+          <br>
+          <!--image gallery, automatic slider-->
+          <div id="spring1" class="spring1">
+            <span id="orangetext" class="titlegal"> Some photos of our spring bottle</span>
+            <div class="sliderf" onmousemove="m(event)">
+              <img class=img src="images/spring1.png" alt="Spring whiskey bottle photo">
+              <img class=img src="images/spring2.png" alt="Spring whiskey bottle photo">
+              <img class=img src="images/Spring3.jpeg" alt="Spring whiskey bottle photo">
+              <img class=img src="images/Spring4.jpeg" alt="Spring whiskey bottle photo">
+              <img class=img src="images/Spring5.jpeg" alt="Spring whiskey bottle photo">
+              <div id="hov">scroll down to swipe right </div>
+            </div>
+          </div>
+      </section>
+    </section>
+    <section class="section2">
+      <section id="spring">
+        <div class="float-area">
+          <img class="floating-img" src="images/winter.png" alt=" Winter Bottle">
+        </div>
+        <div class="text">
+          <h2>
+            <span id="bluetext" class="txt-rotate" data-period="2000" data-rotate='[ "Winter Run", "Winter Run", "Winter Run", "Winter Run", "Winter Run" ]'></span>
+          </h2>
+          <p class="spring">Spring Run is a variation of Wolves signature blend, consisting of whiskey distilled from Stout craft beer, aged in French Oak for 10 years, whiskey distilled from Pilsner beer, aged in New American Oak for 6 years, a Rye selected for its back palate spice, and a single malt American whiskey distilled from two-row malted barley and aged in used French Oak for 10 years. <br>
+            <br>
+            <span class="bluetext">Nose:</span> Honeysuckle, citrus, hops, black cherry, warm vanilla. <br>
+            <br>
+            <span class="bluetext">Tasting Notes:</span> Tangerine, dark chocolate, hops, oak, citrus, nutmeg. <br>
+            <br>
+            <span class="bluetext">Finish:</span> Long and warm on the front pallet, rising space on the finish.
+          </p>
+          <br>
+          <br>
+          <button class="order-button">Order now</button>
+          <br>
+          <br>
+          <!--image gallery, automatic slider-->
+          <div id="spring1" class="spring1">
+            <span id="bluetext" class="titlegal"> Some photos of our spring bottle</span>
+            <div class="sliderg" onmousemove="m(event)">
+              <img class=img src="images/winter1.png" alt="Winter whiskey bottle photo">
+              <img class=img src="images/winter2.png" alt="Winter whiskey bottle photo">
+              <img class=img src="images/Spring3.jpeg" alt="Winter whiskey bottle photo">
+              <img class=img src="images/Spring4.jpeg" alt="Winter whiskey bottle photo">
+              <img class=img src="images/Spring5.jpeg" alt="Winter whiskey bottle photo">
+              <div id="hov">scroll down to swipe right </div>
+            </div>
+          </div>
+      </section>
+    </section>
+    <h1 class="ml6">
+      <span class="text-wrapper">
+        <!--Special projects page-->
+        <span id="specialprojects" class="letters">Special Projects</span>
+      </span>
+    </h1>
+    <div class="slideshow-container">
+      <div class="mySlidesfade">
+        <h4>The Rolce Royce</h4>
+        <div class="card">
+          <p>There is no more finely detailed, bespoke automobile in the world than Rolls-Royce. Wolves has partnered with Rolls on the rollout of the Black Badge edition of the Rolls Royce Ghost. Working with Rolls, Wolves designed and produced a run of whiskey titled “The Black Badge” to celebrate the release of one of the finest automobiles in the world, and will be pouring the whiskey at private Rolls-Royce events around North America. The collaboration is a celebration of bespoke, handmade product. <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button class="order-button">Order now</button>
+          </p>
+          <img class="imgc" src="images/rr.png">
+        </div>
+        <div class="text">1/3</div>
+      </div>
+      <div class="mySlidesfade">
+        <h4>The Hotel Series</h4>
+        <div class="card">
+          <p>Wolves is launching the The Hotel Series, which are whiskey collaborations with some of the world’s finest hotels. The first release, titled Table 9, is with the Peninsula Beverly Hills. Table 9 is a variation of Wolves signature blend, with a high-pilsner content, and is named after the most sought after table in the hotel. In celebration of the partnership, Michelin-starred chef of The Peninsula, Ralf Schlegel, prepared a private, four-course dinner experience at the hotel, with each course paired with a different Wolves expression. <br>
+            <br>
+            <br>
+            <br>
+            <button class="order-button">Order now</button>
+          </p>
+          <img class="imgc" src="images/hotel.png">
+        </div>
+        <div class="text">2/3</div>
+      </div>
+      <div class="mySlidesfade">
+        <h4>The Quail</h4>
+        <div class="card">
+          <div>
+            <p>Wolves was invited to participate at the Quail, A Motorsports Gathering – the pinnacle of automotive excellence. Our tasting experience was next to the classic Ferrari collection. For the event, we produced 250 bottles of our signature blend, titled “The Quail Run,” and wrapped each bottle in the same Napa leather used by Porsche in their interiors. Wolves was also tapped to create an award for Best of Show at the Quail 2021. For this, we ripped the seat out of a rare 1974 Porsche Carrera RS “Ducktail,” made a label from the leather, and wrapped it around a one-of-one 24 year aged California brandy. <br>
+              <br>
+              <br>
+              <button class="order-button">Order now</button>
+            </p>
+            <img class="imgf" src="images/flower.png">
+          </div>
+          <img class="imgc" src="images/quail.png">
+        </div>
+        <div class="text">3/3</div>
+      </div>
+      <!--slider animation button-->
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <!--Our Story page-->
+    <div class="story">
+      <div>
+        <img id="ourstory" class="lettering1" src="images/Wolves.png" alt=" Wolves lettering">
+        <h1 class="p2">Whiskey</h1>
+        <h2 class="storyt">Our Story</h2>
+        <p class="storyp">Wolves is American whiskey made in California from an equally creative group of founders, also based in California. Wolves is distilled in Sonoma County by 13th generation Master Distiller Marko Karakasevic using an old, slow, brandy still that was imported from Cognac in 1983. Uniquely, Wolves signature blend consists of whiskey created from refined craft beer, and Rye whiskey. The flavor profile is unlike anything else on the market.</p>
+      </div>
+      <div>
+        <img class="barley" src="images/hands.png" alt=" hands with barley pearl ">
+        <img class="seeds" src="images/barleypearl.png" alt=" hands with barley pearl ">
+      </div>
+    </div>
+    <div id="scroll-container">
+      <div id="scroll-text">Barley Pearl Seeds.</div>
+    </div>
+    <div class="test">
+      <div id="del1" class="delayed-section" data-scrub="0.5">
+        <div class="innerContainer">
+          <img width="400" src="images/bottle1.png" alt="">
+        </div>
+      </div>
+      <div id="del2" class="delayed-section" data-scrub="0.2">
+        <div class="innerContainer">
+          <img width="400" src="images/bottle2.png" alt="">
+        </div>
+      </div>
+      <div id="del3" class="delayed-section" data-scrub="1">
+        <div class="innerContainer">
+          <img width="300" src="images/bottle3.png" alt="">
+        </div>
+      </div>
+    </div>
+    <h2 id="location" class="location">We are here</h2>
+    <img class="imgl" src="images/map.png">
+    <div class="circle"></div>
+    <!--F.A.Q-->
+    <h2>F.A.Q</h2>
+    <div class="details-group-example">
+      <sl-details summary="First" open> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </sl-details>
+      <sl-details summary="Second"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </sl-details>
+      <sl-details summary="Third"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </sl-details>
+    </div>
+    <h5>Join us on:</h5>
+    <div class="icon">
+      <sl-icon name="facebook"></sl-icon>
+      <sl-icon name="messenger"></sl-icon>
+      <sl-icon name="instagram"></sl-icon>
+    </div> 
+    <!--card for reviews-->
+    <div id="card">
+      <sl-card class="card-overview">
+        <img slot="image" src="images/quail.png" alt="A quail bottle." />
+        <strong>Quail</strong>
+        <br /> Wolves was also tapped to create an award for Best of Show at the Quail 2021. <br />
+        <small>rate it</small>
+        <div slot="footer">
+          <sl-button variant="primary" pill>More Info</sl-button>
+          <sl-rating></sl-rating>
+        </div>
+      </sl-card>
+      <sl-card class="card-overview">
+        <img slot="image" src="images/hotel.png" alt="A quail bottle." />
+        <strong>Rolls-Royce</strong>
+        <br /> There is no more finely detailed, bespoke automobile in the world than Rolls-Royce. <br />
+        <small>rate it</small>
+        <div slot="footer">
+          <sl-button variant="primary" pill>More Info</sl-button>
+          <sl-rating></sl-rating>
+        </div>
+      </sl-card>
+      <sl-card class="card-overview">
+        <img slot="image" src="images/rr.png" alt="A quail bottle." />
+        <strong>The Hotel Series</strong>
+        <br /> The Hotel Series, are whiskey collaborations with some of the world’s finest hotels. <br />
+        <small>rate it</small>
+        <div slot="footer">
+          <sl-button variant="primary" pill>More Info</sl-button>
+          <sl-rating></sl-rating>
+        </div>
+      </sl-card>
+    </div>
+    <!--The CDN for GSAP, Anime.js, and shoelace-->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/shoelace.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/components/details/details.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="main.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.83/dist/shoelace.js"></script>
+  </body>
+</html>
